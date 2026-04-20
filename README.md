@@ -1,36 +1,157 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TravelTrucks
 
-## Getting Started
+## English
 
-First, run the development server:
+### Project Overview
+
+TravelTrucks is a web application for browsing and booking camper vans. It includes a catalog with filters, camper detail pages, favorites, and a booking form integrated with a remote API.
+
+### Main Features
+
+- Home page with hero section and navigation.
+- Camper catalog with filtering by location, camper form, engine type, and transmission.
+- Camper cards with key information and favorites toggle.
+- Camper details page with photo gallery, full-screen image viewer, amenities, specs, reviews, and booking form.
+- Booking request submission with client-side validation.
+- Favorites persistence using `localStorage`.
+- Responsive layout for desktop and mobile.
+
+### Tech Stack
+
+- Next.js 16 (App Router)
+- React 19 + TypeScript
+- CSS Modules
+- TanStack Query
+- React Hook Form + Zod
+- Sonner (toast notifications)
+- React Icons
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone git@github.com:Shido337/TravelTrucks.git
+cd TravelTrucks
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open in browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+https://vercel.com/shido337s-projects/travel-trucks
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Usage
 
-## Learn More
+- Home page: `/`
+- Catalog page: `/catalog`
+- Camper details page: `/catalog/{camperId}`
 
-To learn more about Next.js, take a look at the following resources:
+Useful scripts:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run dev
+npm run build
+npm run start
+npm run lint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### API
 
-## Deploy on Vercel
+- Base URL: `https://campers-api.goit.study`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- GitHub: [Shido337](https://github.com/Shido337)
+- Repository: [TravelTrucks](https://github.com/Shido337/TravelTrucks)
+
+---
+
+## Українська
+
+### Короткий опис
+
+TravelTrucks - це вебзастосунок для перегляду та бронювання кемперів. У проєкті реалізовано каталог із фільтрами, сторінки деталей кемпера, обране та форму бронювання з інтеграцією API.
+
+### Основні функції
+
+- Головна сторінка з hero-блоком і навігацією.
+- Каталог кемперів із фільтрами за локацією, типом кемпера, типом двигуна та трансмісією.
+- Картки кемперів з основною інформацією та додаванням в обране.
+- Сторінка деталей кемпера з галереєю фото, повноекранним переглядом, зручностями, технічними характеристиками, відгуками та формою бронювання.
+- Надсилання заявки на бронювання з клієнтською валідацією.
+- Збереження обраного у `localStorage`.
+- Адаптивний інтерфейс для desktop і mobile.
+
+### Технології
+
+- Next.js 16 (App Router)
+- React 19 + TypeScript
+- CSS Modules
+- TanStack Query
+- React Hook Form + Zod
+- Sonner (toast-сповіщення)
+- React Icons
+
+### Встановлення
+
+1. Клонувати репозиторій:
+
+```bash
+git clone git@github.com:Shido337/TravelTrucks.git
+cd TravelTrucks
+```
+
+2. Встановити залежності:
+
+```bash
+npm install
+```
+
+3. Запустити проєкт у режимі розробки:
+
+```bash
+npm run dev
+```
+
+4. Відкрити у браузері:
+
+```
+https://vercel.com/shido337s-projects/travel-trucks
+```
+
+### Використання
+
+- Головна сторінка: `/`
+- Каталог: `/catalog`
+- Деталі кемпера: `/catalog/{camperId}`
+
+Корисні команди:
+
+```bash
+npm run dev
+npm run build
+npm run start
+npm run lint
+```
+
+### API
+
+- Базова адреса API: `https://campers-api.goit.study`
+
+### Автор
+
+- GitHub: [Shido337](https://github.com/Shido337)
+- Репозиторій: [TravelTrucks](https://github.com/Shido337/TravelTrucks)
