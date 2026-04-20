@@ -5,8 +5,14 @@
 }
 
 .mainWrap {
+  border: none;
+  padding: 0;
+  background: transparent;
+  width: 100%;
+  text-align: left;
   border-radius: 10px;
   overflow: hidden;
+  cursor: zoom-in;
 }
 
 .mainImage {
@@ -23,6 +29,10 @@
 }
 
 .thumbWrap {
+  border: none;
+  padding: 0;
+  background: transparent;
+  width: 100%;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -34,4 +44,91 @@
   height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 24, 40, 0.88);
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.lightboxContent {
+  width: min(92vw, 1200px);
+  max-height: 88vh;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--main);
+}
+
+.lightboxImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 88vh;
+  object-fit: contain;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(247, 247, 247, 0.2);
+  color: var(--white);
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(247, 247, 247, 0.2);
+  color: var(--white);
+  font-size: 34px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.prevBtn {
+  left: 16px;
+}
+
+.nextBtn {
+  right: 16px;
+}
+
+.closeBtn:hover,
+.navBtn:hover {
+  background: rgba(247, 247, 247, 0.3);
+}
+
+@media (max-width: 768px) {
+  .lightbox {
+    padding: 16px;
+  }
+
+  .closeBtn {
+    top: 10px;
+    right: 10px;
+  }
+
+  .navBtn {
+    width: 44px;
+    height: 44px;
+    font-size: 30px;
+  }
 }
