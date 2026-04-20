@@ -1,0 +1,37 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.mainWrap {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.mainImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.thumbsRow {
+  display: grid;
+  gap: 18px;
+}
+
+.thumbWrap {
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.thumbImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
