@@ -15,6 +15,14 @@
   cursor: zoom-in;
 }
 
+.mainWrap:focus {
+  outline: none;
+}
+
+.mainWrap:focus-visible {
+  outline: none;
+}
+
 .mainImage {
   display: block;
   width: 100%;
@@ -38,6 +46,14 @@
   cursor: pointer;
 }
 
+.thumbWrap:focus {
+  outline: none;
+}
+
+.thumbWrap:focus-visible {
+  outline: none;
+}
+
 .thumbImage {
   display: block;
   width: 100%;
@@ -58,19 +74,24 @@
 }
 
 .lightboxContent {
-  width: min(92vw, 1200px);
-  max-height: 88vh;
+  width: auto;
+  max-width: min(86vw, 980px);
+  max-height: 78vh;
   border-radius: 16px;
   overflow: hidden;
-  background: var(--main);
+  background: transparent;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  display: flex;
 }
 
 .lightboxImage {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
-  max-height: 88vh;
+  max-width: min(86vw, 980px);
+  max-height: 78vh;
   object-fit: contain;
+  border-radius: 16px;
 }
 
 .closeBtn {
@@ -119,6 +140,17 @@
 @media (max-width: 768px) {
   .lightbox {
     padding: 16px;
+  }
+
+  .lightboxContent {
+    width: auto;
+    max-width: 100%;
+    max-height: 72vh;
+  }
+
+  .lightboxImage {
+    max-width: 100%;
+    max-height: 72vh;
   }
 
   .closeBtn {
